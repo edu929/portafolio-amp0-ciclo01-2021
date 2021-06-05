@@ -11,19 +11,19 @@ using std::endl;
 
 class Digrafo{
 	private:
-		int vertices; 			// Numero de vertices en el digrafo
-		int aristas;			// Numero de aristas en el digrafo
-		list<int> *adyacentes;	// Lista de los vecinos
+		int vertices; 			
+		int aristas;			
+		list<int> *adyacentes;	
 	public:
-		Digrafo();						// Constructor
-		Digrafo(const Digrafo &otro);	// Constructor a partir de otro Digrafo
-		~Digrafo();						// Destructor
-		int getVertices() const;		// Obtener el numero de vertices	
-		void setVertices(int vertices);	// Establecer el numero de vertices
-		int getAristas() const;			// Obtener el numero de aristas
-		list<int> getAdyacentes(int v) const; // Obtener lista de adyacentes
-		void agregarArista(int v, int w);		// Agregar la arista v - w
-		void imprimir();				// Imprimir el grafo
+		Digrafo();				// Constructor
+		Digrafo(const Digrafo &otro);	
+		~Digrafo();				// Destructor
+		int getVertices() const;			
+		void setVertices(int vertices);	
+		int getAristas() const;			
+		list<int> getAdyacentes(int v) const; 
+		void agregarArista(int v, int w);		
+		void imprimir();				
 };
 
 Digrafo::Digrafo() : vertices(0), aristas(0), adyacentes(nullptr) {
